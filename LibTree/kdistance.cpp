@@ -16,6 +16,7 @@ void belownodes(TreeNode *root,int distance){
         belownodes(root->right,distance-1);
     }
 }
+
 int Tree::kdistance(TreeNode* root, int id,int k){
     if(root==NULL)
         return -1;
@@ -42,6 +43,6 @@ int Tree::kdistance(TreeNode* root, int id,int k){
         
         return distance_from_node-1;        
     }
-    
-    return distance_from_node;
+   // cout<<"reached";
+    return -1;
 }
