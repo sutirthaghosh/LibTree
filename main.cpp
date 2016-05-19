@@ -33,5 +33,7 @@ int main() {
     tr.print();
     cout<<"SPIRAL ORDER"<<endl;
     tr.printS();
+    cout<<"K DISTANCE"<<endl;
+    tr.kdistance(tr.getRoot(),15,4);
     return 0;
 }

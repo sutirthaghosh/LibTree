@@ -19,6 +19,7 @@ class Tree{
 public:
     Tree(){root=NULL;}
     TreeNode* insert(int id,TreeNode *parent=NULL,int position=-1);
+    TreeNode* getRoot(){return root;}
     void print();
     void printS();
     int kdistance(TreeNode* root,int id,int k);

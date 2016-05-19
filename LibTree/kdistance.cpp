@@ -6,7 +6,7 @@
  */
 using namespace std;
 void belownodes(TreeNode *root,int distance){
-    if(root==NULL || distance <= 0)
+    if(root==NULL || distance < 0)
         return;
     if(distance==0){
         cout<<root->id<<" ";
@@ -19,14 +19,29 @@ void belownodes(TreeNode *root,int distance){
 int Tree::kdistance(TreeNode* root, int id,int k){
     if(root==NULL)
         return -1;
-    if(root->id == id)
+    if(root->id == id){
+        belownodes(root,k);
         return 0;
-    int distance_from_node = kdistance(root->left,id,k-1);
+        }
+    int distance_from_node = kdistance(root->left,id,k);
     if(distance_from_node != -1){
         if(distance_from_node+1 == k)
-            cout<<root->id;
+            cout<<root->id<<",, ";
         else
             belownodes(root->right,k-distance_from_node-2);
+        
+        return distance_from_node-1;        
     }
     
+    distance_from_node = kdistance(root->right,id,k);
+    if(distance_from_node != -1){
+        if(distance_from_node+1 == k)
+            cout<<root->id<<",, ";
+        else
+            belownodes(root->left,k-distance_from_node-2);
+        
+        return distance_from_node-1;        
+    }
+    
+    return distance_from_node;
 }
