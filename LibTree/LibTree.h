@@ -3,6 +3,7 @@
 #include <queue>
 #include <stack>
 #include <deque>
+#include <map>
 #define LEFT 0
 #define RIGHT 1
 class TreeNode{
@@ -25,4 +26,5 @@ public:
     int kdistance(TreeNode* root,int id,int k);
     int deletenode(int id);
     void Iterative_Preorder();
+    void PrintLeaf2Root();
 };

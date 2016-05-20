@@ -37,5 +37,7 @@ int main() {
     tr.kdistance(tr.getRoot(),15,2);
     cout<<endl<<"ITERATIVE PREORDER"<<endl;
     tr.Iterative_Preorder();
+    cout<<endl<<"Leaf2Root"<<endl;
+    tr.PrintLeaf2Root();
     return 0;
 }
