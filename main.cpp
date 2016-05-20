@@ -35,5 +35,7 @@ int main() {
     tr.printS();
     cout<<"K DISTANCE"<<endl;
     tr.kdistance(tr.getRoot(),15,2);
+    cout<<endl<<"ITERATIVE PREORDER"<<endl;
+    tr.Iterative_Preorder();
     return 0;
 }

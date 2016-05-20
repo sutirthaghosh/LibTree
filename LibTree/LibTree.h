@@ -24,5 +24,5 @@ public:
     void printS();
     int kdistance(TreeNode* root,int id,int k);
     int deletenode(int id);
-    
+    void Iterative_Preorder();
 };
