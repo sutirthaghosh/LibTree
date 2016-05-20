@@ -34,7 +34,7 @@ int main() {
     cout<<"SPIRAL ORDER"<<endl;
     tr.printS();
     cout<<"K DISTANCE"<<endl;
-    tr.kdistance(tr.getRoot(),15,2);
+    tr.kdistance(tr.getRoot(),18,2);
     cout<<endl<<"ITERATIVE PREORDER"<<endl;
     tr.Iterative_Preorder();
     cout<<endl<<"Leaf2Root"<<endl;
