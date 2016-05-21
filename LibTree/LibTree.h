@@ -27,4 +27,5 @@ public:
     int deletenode(int id);
     void Iterative_Preorder();
     void PrintLeaf2Root();
+    TreeNode* Lcs_General(TreeNode *,int,int);
 };

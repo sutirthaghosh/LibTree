@@ -39,5 +39,7 @@ int main() {
     tr.Iterative_Preorder();
     cout<<endl<<"Leaf2Root"<<endl;
     tr.PrintLeaf2Root();
+    cout<<"LCS"<<endl;
+    cout<<tr.Lcs_General(tr.getRoot(),13,20)->id<<" ";
     return 0;
 }
