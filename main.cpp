@@ -40,6 +40,9 @@ int main() {
     cout<<endl<<"Leaf2Root"<<endl;
     tr.PrintLeaf2Root();
     cout<<"LCS"<<endl;
-    cout<<tr.Lcs_General(tr.getRoot(),13,20)->id<<" ";
+    cout<<tr.Lcs_General(tr.getRoot(),13,20)->id<<endl;
+    cout<<"LCS-BST"<<endl;
+    if(tr.Lcs_bst(tr.getRoot(),6,2)!=NULL) 
+    cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
     return 0;
 }
