@@ -29,4 +29,5 @@ public:
     void PrintLeaf2Root();
     TreeNode* Lcs_General(TreeNode *,int,int);
     TreeNode* Lcs_bst(TreeNode *,int,int);
+    int sum_tree(TreeNode *);
 };

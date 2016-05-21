@@ -44,5 +44,8 @@ int main() {
     cout<<"LCS-BST"<<endl;
     if(tr.Lcs_bst(tr.getRoot(),6,2)!=NULL) 
     cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
+    cout<<"WARNING TREE STRUCTURE CHANGING--->SUM TREE"<<endl;
+    tr.sum_tree(tr.getRoot());
+    tr.print();
     return 0;
 }
