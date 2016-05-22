@@ -44,8 +44,9 @@ int main() {
     cout<<"LCS-BST"<<endl;
     if(tr.Lcs_bst(tr.getRoot(),6,2)!=NULL) 
     cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
-    cout<<"WARNING TREE STRUCTURE CHANGING--->SUM TREE"<<endl;
-    tr.sum_tree(tr.getRoot());
-    tr.print();
+    cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
+    tr.tree2dll(tr.getRoot());
+    /*tr.sum_tree(tr.getRoot());
+    tr.print();*/
     return 0;
 }
