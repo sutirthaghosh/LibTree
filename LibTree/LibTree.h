@@ -4,6 +4,7 @@
 #include <stack>
 #include <deque>
 #include <map>
+#include <algorithm>
 #define LEFT 0
 #define RIGHT 1
 class TreeNode{
@@ -31,4 +32,5 @@ public:
     TreeNode* Lcs_bst(TreeNode *,int,int);
     int sum_tree(TreeNode *);
     void tree2dll(TreeNode*);
+    void vertical_print(TreeNode *);
 };

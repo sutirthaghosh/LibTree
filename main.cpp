@@ -40,13 +40,15 @@ int main() {
     cout<<endl<<"Leaf2Root"<<endl;
     tr.PrintLeaf2Root();
     cout<<"LCS"<<endl;
-    cout<<tr.Lcs_General(tr.getRoot(),13,20)->id<<endl;
+    cout<<tr.Lcs_General(tr.getRoot(),13,12)->id<<endl;
     cout<<"LCS-BST"<<endl;
     if(tr.Lcs_bst(tr.getRoot(),6,2)!=NULL) 
     cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
-    cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
+    cout<<"VERTICAL ORDER"<<endl;
+    tr.vertical_print(tr.getRoot());
+    /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
-    /*tr.sum_tree(tr.getRoot());
+    tr.sum_tree(tr.getRoot());
     tr.print();*/
     return 0;
 }

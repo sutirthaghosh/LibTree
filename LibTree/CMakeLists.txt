@@ -8,4 +8,5 @@ Lcs_General.cpp
 Lcs_bst.cpp
 sum_tree.cpp
 tree2dll.cpp
+vertical_print.cpp
 )
