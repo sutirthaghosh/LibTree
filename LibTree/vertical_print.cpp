@@ -17,9 +17,9 @@ void Tree::vertical_print(TreeNode *root){
             q.push(make_pair((q.front().first)->right,
                     q.front().second + 1
             ));
+        }
             v.push_back(q.front());
             q.pop();
-        }
     }
     
     sort(v.begin(),v.end(),custom_compare);
