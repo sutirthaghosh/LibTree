@@ -32,6 +32,7 @@ void Tree::vertical_print(TreeNode *root){
              cout<<endl;
         }
         cout<<beg->first->id<<" ";
+        
         beg++;
     }
 }
