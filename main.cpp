@@ -39,6 +39,8 @@ int main() {
     tr.Iterative_Preorder();
     cout<<endl<<"Leaf2Root"<<endl;
     tr.PrintLeaf2Root();
+    cout<<"HEIGHT OF A GIVEN NODE"<<endl;
+    tr.height_of_node(8,tr.getRoot());
     cout<<"LCS"<<endl;
     cout<<tr.Lcs_General(tr.getRoot(),13,12)->id<<endl;
     cout<<"LCS-BST"<<endl;
