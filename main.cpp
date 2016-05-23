@@ -48,6 +48,8 @@ int main() {
     tr.vertical_print(tr.getRoot());
     cout<<endl<<"ROOT2LEAF"<<endl;
     tr.PrintRoot2Leaf(tr.getRoot());
+    cout<<endl<<"ROOT2LEAF MAXIMUM SUM"<<endl;
+    tr.leaftorootmaxsum(tr.getRoot());
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());
