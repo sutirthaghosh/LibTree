@@ -46,6 +46,8 @@ int main() {
     cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
     cout<<"VERTICAL ORDER"<<endl;
     tr.vertical_print(tr.getRoot());
+    cout<<endl<<"ROOT2LEAF"<<endl;
+    tr.PrintRoot2Leaf(tr.getRoot());
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());

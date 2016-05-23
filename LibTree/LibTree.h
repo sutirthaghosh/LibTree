@@ -28,6 +28,7 @@ public:
     int deletenode(int id);
     void Iterative_Preorder();
     void PrintLeaf2Root();
+    void PrintRoot2Leaf(TreeNode*);
     TreeNode* Lcs_General(TreeNode *,int,int);
     TreeNode* Lcs_bst(TreeNode *,int,int);
     int sum_tree(TreeNode *);
