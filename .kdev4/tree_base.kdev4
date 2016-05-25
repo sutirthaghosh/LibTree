@@ -4,26 +4,25 @@ BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x
 [CMake]
 Build Directory Count=1
 Current Build Directory Index=0
+ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
-Build Directory Path=/home/sutirtha/dev/sgsd/build
+Build Directory Path=file:///home/shubhashree/dev/8.%20myownrepo/build1
 Build Type=Debug
-CMake Binary=/usr/bin/cmake
+CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=
 Install Directory=
 
 [CustomDefinesAndIncludes][ProjectPath0]
+Defines=\x00\x00\x00\x00
+Includes=\x00\x00\x00\x01\x00\x00\x00h\x00/\x00h\x00o\x00m\x00e\x00/\x00s\x00h\x00u\x00b\x00h\x00a\x00s\x00h\x00r\x00e\x00e\x00/\x00d\x00e\x00v\x00/\x008\x00.\x00 \x00m\x00y\x00o\x00w\x00n\x00r\x00e\x00p\x00o\x00/\x00L\x00i\x00b\x00T\x00r\x00e\x00e\x00/\x00L\x00i\x00b\x00T\x00r\x00e\x00e\x00.\x00h
 Path=.
-parseAmbiguousAsCPP=true
-parserArguments=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++11
-parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c99
 
-[CustomDefinesAndIncludes][ProjectPath0][Compiler]
-Name=Clang
-
-[CustomDefinesAndIncludes][ProjectPath0][Includes]
-1=/home/sutirtha/dev/sgsd/LibTree/
+[Defines And Includes][Compiler]
+Name=GCC
+Path=gcc
+Type=GCC
 
 [Filters]
 size=26

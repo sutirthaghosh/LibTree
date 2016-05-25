@@ -12,7 +12,7 @@ int main() {
      *       / \   / \
      *      3   8 14  18
      *     / \    /   / \
-     *    2  6   13  16  20
+     *    2   6  13  16  20
      *             \
      *              12  
      * */
@@ -48,6 +48,8 @@ int main() {
     cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
     cout<<"VERTICAL ORDER"<<endl;
     tr.vertical_print(tr.getRoot());
+    cout<<"\nVERTICAL PRINT 2"<<endl;
+    tr.vertical_print_2(tr.getRoot());
     cout<<endl<<"ROOT2LEAF"<<endl;
     tr.PrintRoot2Leaf(tr.getRoot());
     cout<<endl<<"ROOT2LEAF MAXIMUM SUM"<<endl;

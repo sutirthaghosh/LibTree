@@ -35,5 +35,6 @@ public:
     int sum_tree(TreeNode *);
     void tree2dll(TreeNode*);
     void vertical_print(TreeNode *);
+    void vertical_print_2(TreeNode*);
     void height_of_node(int, TreeNode*);
 };

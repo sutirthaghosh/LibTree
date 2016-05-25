@@ -10,9 +10,7 @@ sum_tree.cpp
 tree2dll.cpp
 vertical_print.cpp
 PrintRoot2Leaf.cpp
-<<<<<<< HEAD
 height_of_given_node.cpp
-=======
 leaftorootmaxsum.cpp
->>>>>>> upstream/master
+vertical_print_2.cpp
 )

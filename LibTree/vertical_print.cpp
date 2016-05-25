@@ -10,13 +10,11 @@ void Tree::vertical_print(TreeNode *root){
     while(!q.empty()){
         if((q.front().first)->left!=NULL){
             q.push(make_pair((q.front().first)->left,
-               q.front().second - 1 
-            ));            
+               q.front().second - 1));            
         }
         if((q.front().first)->right!=NULL){
             q.push(make_pair((q.front().first)->right,
-                    q.front().second + 1
-            ));
+                    q.front().second + 1 ));
         }
             v.push_back(q.front());
             q.pop();
