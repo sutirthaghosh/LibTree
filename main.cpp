@@ -13,8 +13,8 @@ int main() {
      *      3   8 14  18
      *     / \    /   / \
      *    2  6   13  16  20
-     *             \
-     *              12  
+     *           /  
+     *          12  
      * */
     t1=tr.insert(10,NULL,0);
     t2=tr.insert(7,t1,0);
@@ -52,6 +52,14 @@ int main() {
     tr.leaftorootmaxsum(tr.getRoot());
     cout<<endl<<"LEAF2LEAFMAXSUM"<<endl;
     tr.l2lmaxsum(tr.getRoot());
+    cout<<endl<<"K distance from root"<<endl;
+    tr.print_k_distance_from_root(tr.getRoot(),3);
+    cout<<endl<<"HEIGHT of a NODE"<<endl;
+    cout<<tr.hight_of_a_node(tr.getRoot(),12);
+    cout<<endl<<"BOUNDARY TRAVERSAL"<<endl;
+    tr.boundary_traversal(tr.getRoot());
+    cout<<endl<<"K DISTANCE FROM LEAF"<<endl;
+    tr.k_distance_from_leaf(tr.getRoot(),12,5);
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());

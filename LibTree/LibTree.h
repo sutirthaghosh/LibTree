@@ -25,6 +25,7 @@ public:
     void print();
     void printS();
     int kdistance(TreeNode* root,int id,int k);
+    void print_k_distance_from_root(TreeNode*,int);
     int deletenode(int id);
     void Iterative_Preorder();
     void PrintLeaf2Root();
@@ -36,4 +37,7 @@ public:
     int sum_tree(TreeNode *);
     void tree2dll(TreeNode*);
     void vertical_print(TreeNode *);
+    int hight_of_a_node(TreeNode*,int);
+    void boundary_traversal(TreeNode*);
+    int k_distance_from_leaf(TreeNode *,int,int);
 };

@@ -12,4 +12,8 @@ vertical_print.cpp
 PrintRoot2Leaf.cpp
 leaftorootmaxsum.cpp
 Leaf2Leafmaxsum.cpp
+k_distance_from_root.cpp
+height_of_a_node.cpp
+boundary_traversal.cpp
+k_distance_from_leaf.cpp
 )
