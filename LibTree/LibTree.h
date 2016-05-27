@@ -40,4 +40,5 @@ public:
     int hight_of_a_node(TreeNode*,int);
     void boundary_traversal(TreeNode*);
     int k_distance_from_leaf(TreeNode *,int,int);
+    bool is_mirror(TreeNode*,TreeNode*);
 };

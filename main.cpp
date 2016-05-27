@@ -24,8 +24,8 @@ int main() {
     tr.insert(6);
     tr.insert(15);
     tr.insert(14);
-    tr.insert(13);
-    tr.insert(12);
+   // tr.insert(13);
+   // tr.insert(12);
     tr.insert(18);
     tr.insert(16);
     tr.insert(20);
@@ -40,7 +40,7 @@ int main() {
     cout<<endl<<"Leaf2Root"<<endl;
     tr.PrintLeaf2Root();
     cout<<"LCS"<<endl;
-    cout<<tr.Lcs_General(tr.getRoot(),13,12)->id<<endl;
+   // cout<<tr.Lcs_General(tr.getRoot(),13,12)->id<<endl;
     cout<<"LCS-BST"<<endl;
     if(tr.Lcs_bst(tr.getRoot(),6,2)!=NULL) 
     cout<<tr.Lcs_bst(tr.getRoot(),6,2)->id<<endl;
@@ -60,6 +60,11 @@ int main() {
     tr.boundary_traversal(tr.getRoot());
     cout<<endl<<"K DISTANCE FROM LEAF"<<endl;
     tr.k_distance_from_leaf(tr.getRoot(),12,5);
+    cout<<endl<<"IS MIRROR"<<endl;
+    if(tr.is_mirror(tr.getRoot()->left,tr.getRoot()->right))
+        cout<<"yes";
+    else
+        cout<<"no";
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());

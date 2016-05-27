@@ -16,4 +16,5 @@ k_distance_from_root.cpp
 height_of_a_node.cpp
 boundary_traversal.cpp
 k_distance_from_leaf.cpp
+check_mirror.cpp
 )
