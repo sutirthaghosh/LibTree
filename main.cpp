@@ -65,6 +65,11 @@ int main() {
         cout<<"yes";
     else
         cout<<"no";
+    cout<<endl<<"DIAMETER OF THE TREE"<<endl;
+    cout<<tr.Diameter(tr.getRoot());
+    cout<<"*******WARNING THREADED TREE CREATING*******"<<endl;
+    tr.make_Threaded_Recursion(tr.getRoot());
+    tr.print_Threaded(tr.getRoot());
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());

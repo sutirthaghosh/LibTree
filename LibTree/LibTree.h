@@ -7,13 +7,15 @@
 #include <algorithm>
 #define LEFT 0
 #define RIGHT 1
+
 class TreeNode{
 public:
     int id;
 public:
     TreeNode *left;
     TreeNode *right;
-    TreeNode(int temp=0){id=temp;left=NULL;right=NULL;}
+    bool rightThreaded;
+    TreeNode(int temp=0){id=temp;left=NULL;right=NULL;rightThreaded=false;}
 };
 class Tree{
     TreeNode *root;
@@ -41,4 +43,7 @@ public:
     void boundary_traversal(TreeNode*);
     int k_distance_from_leaf(TreeNode *,int,int);
     bool is_mirror(TreeNode*,TreeNode*);
+    int Diameter(TreeNode*);
+    TreeNode* make_Threaded_Recursion(TreeNode*);
+    void print_Threaded(TreeNode *);
 };
