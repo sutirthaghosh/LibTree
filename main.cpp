@@ -1,9 +1,19 @@
 
 #include <LibTree.h>
-
+#include <curses.h>
 using namespace std;
+void aux();
 int main() {
-    Tree tr;
+    
+    initscr();
+    printw("Hello World !!!");
+    refresh();
+    getch();
+    endwin();
+    return 0;
+}
+void aux(){
+   Tree tr;
     TreeNode *t1,*t2,*t3,*t4,*t5;
     /*
      *          10
@@ -24,8 +34,8 @@ int main() {
     tr.insert(6);
     tr.insert(15);
     tr.insert(14);
-   // tr.insert(13);
-   // tr.insert(12);
+    tr.insert(13);
+    tr.insert(12);
     tr.insert(18);
     tr.insert(16);
     tr.insert(20);
@@ -65,14 +75,13 @@ int main() {
         cout<<"yes";
     else
         cout<<"no";
-    cout<<endl<<"DIAMETER OF THE TREE"<<endl;
+    cout<<endl<<"DIAMETER OF THE TREE";
     cout<<tr.Diameter(tr.getRoot());
-    cout<<"*******WARNING THREADED TREE CREATING*******"<<endl;
+    cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
     tr.make_Threaded_Recursion(tr.getRoot());
     tr.print_Threaded(tr.getRoot());
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());
-    tr.print();*/
-    return 0;
+    tr.print();*/ 
 }

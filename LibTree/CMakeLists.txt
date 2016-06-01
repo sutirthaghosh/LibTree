@@ -1,4 +1,4 @@
-add_library(LibTree 
+add_library(LibTree SHARED
 LibTree.cpp 
 PrintSpiral.cpp 
 kdistance.cpp
