@@ -1,15 +1,17 @@
 
 #include <LibTree.h>
-#include <curses.h>
+#include <ncurses.h>
 using namespace std;
 void aux();
 int main() {
     
-    initscr();
-    printw("Hello World !!!");
-    refresh();
+   // initscr();
+   // printw("Hello World !!!");
+   // refresh();
+    
+    aux();
     getch();
-    endwin();
+   // endwin();
     return 0;
 }
 void aux(){
@@ -77,9 +79,12 @@ void aux(){
         cout<<"no";
     cout<<endl<<"DIAMETER OF THE TREE";
     cout<<tr.Diameter(tr.getRoot());
-    cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
+    cout<<endl<<"POST ORDER";
+    tr.Iterative_PostOrder(tr.getRoot());
+    cout<<endl<<"CLOSEST LEAF"<<" "<<tr.Closest_Leaf(tr.getRoot(),3);
+    /*cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
     tr.make_Threaded_Recursion(tr.getRoot());
-    tr.print_Threaded(tr.getRoot());
+    tr.print_Threaded(tr.getRoot());*/
     /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());

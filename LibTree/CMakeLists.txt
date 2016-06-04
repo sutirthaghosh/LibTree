@@ -20,4 +20,6 @@ check_mirror.cpp
 diameter.cpp
 make_Threaded_Recursion.cpp
 print_Threaded.cpp
+Iterative_PostOrder.cpp
+Closest_Leaf.cpp
 )

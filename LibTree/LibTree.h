@@ -46,4 +46,6 @@ public:
     int Diameter(TreeNode*);
     TreeNode* make_Threaded_Recursion(TreeNode*);
     void print_Threaded(TreeNode *);
+    void Iterative_PostOrder(TreeNode *);
+    int Closest_Leaf(TreeNode*,int);
 };
