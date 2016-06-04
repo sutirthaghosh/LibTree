@@ -48,4 +48,5 @@ public:
     void print_Threaded(TreeNode *);
     void Iterative_PostOrder(TreeNode *);
     int Closest_Leaf(TreeNode*,int);
+    int Print_Ancestor(TreeNode*,int);
 };

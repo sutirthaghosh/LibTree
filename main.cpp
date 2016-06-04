@@ -82,6 +82,8 @@ void aux(){
     cout<<endl<<"POST ORDER";
     tr.Iterative_PostOrder(tr.getRoot());
     cout<<endl<<"CLOSEST LEAF"<<" "<<tr.Closest_Leaf(tr.getRoot(),3);
+    cout<<endl<<"PRINT ANCSTOR";
+    tr.Print_Ancestor(tr.getRoot(),13);
     /*cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
     tr.make_Threaded_Recursion(tr.getRoot());
     tr.print_Threaded(tr.getRoot());*/
