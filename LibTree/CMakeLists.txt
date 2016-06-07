@@ -23,4 +23,7 @@ print_Threaded.cpp
 Iterative_PostOrder.cpp
 Closest_Leaf.cpp
 Print_Ancestor.cpp
+is_AVL_balanced.cpp
+deepest_Leaf.cpp
+root2leaf_particular_sum.cpp
 )

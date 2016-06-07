@@ -41,6 +41,7 @@ void aux(){
     tr.insert(18);
     tr.insert(16);
     tr.insert(20);
+
     cout<<"LEVEL ORDER"<<endl;
     tr.print();
     cout<<"SPIRAL ORDER"<<endl;
@@ -84,6 +85,9 @@ void aux(){
     cout<<endl<<"CLOSEST LEAF"<<" "<<tr.Closest_Leaf(tr.getRoot(),3);
     cout<<endl<<"PRINT ANCSTOR";
     tr.Print_Ancestor(tr.getRoot(),13);
+    tr.is_AVL_balanced(tr.getRoot());
+    cout<<"DEEPEST LEAF"<<tr.deepest_Leaf(tr.getRoot(),0)->id;
+    cout<<std::endl<<"ROOT2LEAF-Particular sum"<<tr.root2leaf_particular_sum(tr.getRoot(),25);
     /*cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
     tr.make_Threaded_Recursion(tr.getRoot());
     tr.print_Threaded(tr.getRoot());*/

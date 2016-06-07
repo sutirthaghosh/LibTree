@@ -49,4 +49,7 @@ public:
     void Iterative_PostOrder(TreeNode *);
     int Closest_Leaf(TreeNode*,int);
     int Print_Ancestor(TreeNode*,int);
+    int is_AVL_balanced(TreeNode *);
+    TreeNode* deepest_Leaf(TreeNode *,int);
+    int root2leaf_particular_sum(TreeNode *root,int);
 };

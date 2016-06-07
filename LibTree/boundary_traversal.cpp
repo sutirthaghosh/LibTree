@@ -4,7 +4,7 @@ void Tree::boundary_traversal(TreeNode *root){
     TreeNode *temp;
     std::stack<TreeNode*> st;
     temp=root;
-    while(temp->left!=NULL && temp->right != NULL){
+    while(temp->left!=NULL || temp->right != NULL){
         std::cout<<temp->id<<" ";
         if(temp->left!=NULL)
             temp=temp->left;
@@ -41,7 +41,7 @@ void Tree::boundary_traversal(TreeNode *root){
             st.pop();
         }
         temp=root;
-        while(temp->left!=NULL && temp->right != NULL){
+        while(temp->left!=NULL || temp->right != NULL){
         st.push(temp);
             if(temp->right!=NULL)
             temp=temp->right;
