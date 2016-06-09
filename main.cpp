@@ -28,7 +28,10 @@ void aux(){
      *           /  
      *          12  
      * */
-    t1=tr.insert(10,NULL,0);
+    int preorder[] = {10,7,3,2,6,8,15,14,13,12,18,16,20};
+    int inorder[]= {2,3,6,7,8,10,12,13,14,15,16,18,20};
+   tr.setRoot(tr.Create_Tree_from_Inorder_Preorder(inorder,preorder,0,12));
+    /*t1=tr.insert(10,NULL,0);
     t2=tr.insert(7,t1,0);
     tr.insert(8);
     tr.insert(3);
@@ -40,7 +43,7 @@ void aux(){
     tr.insert(12);
     tr.insert(18);
     tr.insert(16);
-    tr.insert(20);
+    tr.insert(20);*/
 
     cout<<"LEVEL ORDER"<<endl;
     tr.print();

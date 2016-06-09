@@ -24,6 +24,7 @@ public:
     Tree(){root=NULL;}
     TreeNode* insert(int id,TreeNode *parent=NULL,int position=-1);
     TreeNode* getRoot(){return root;}
+    void setRoot(TreeNode *R){root=R;}
     void print();
     void printS();
     int kdistance(TreeNode* root,int id,int k);
@@ -53,4 +54,5 @@ public:
     TreeNode* deepest_Leaf(TreeNode *,int);
     int root2leaf_particular_sum(TreeNode *root,int);
     int diff_sum_alternate_level(TreeNode*);
+    TreeNode* Create_Tree_from_Inorder_Preorder(int inorder[],int preorder[],int,int);
 };
