@@ -52,4 +52,5 @@ public:
     int is_AVL_balanced(TreeNode *);
     TreeNode* deepest_Leaf(TreeNode *,int);
     int root2leaf_particular_sum(TreeNode *root,int);
+    int diff_sum_alternate_level(TreeNode*);
 };
