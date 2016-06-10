@@ -7,3 +7,5 @@ is_AVL_height_balanced.cpp ->http://www.geeksforgeeks.org/how-to-determine-if-a-
 deepest_leaf.cpp->http://www.geeksforgeeks.org/deepest-left-leaf-node-in-a-binary-tree/
 
 root2leaf_particular_sum.cpp -> http://www.geeksforgeeks.org/root-to-leaf-path-sum-equal-to-a-given-number/
+
+multiplication_sum_level.cpp -> http://www.geeksforgeeks.org/find-multiplication-of-sums-of-data-of-all-leaves-at-sane-levels/

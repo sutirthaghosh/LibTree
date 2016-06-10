@@ -55,4 +55,5 @@ public:
     int root2leaf_particular_sum(TreeNode *root,int);
     int diff_sum_alternate_level(TreeNode*);
     TreeNode* Create_Tree_from_Inorder_Preorder(int inorder[],int preorder[],int,int);
+    int multiplication_sum_level(TreeNode*);
 };
