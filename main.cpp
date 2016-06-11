@@ -93,6 +93,7 @@ void aux(){
     cout<<std::endl<<"ROOT2LEAF-Particular sum"<<tr.root2leaf_particular_sum(tr.getRoot(),25);
     cout<<std::endl<<"ALTERNATE LEVEL SUM DIFFERENCE "<<tr.diff_sum_alternate_level(tr.getRoot());
     cout<<endl<<"MULTIPLICATION OF SUM OF LEAF NODES AT ALL LEVELS"<<tr.multiplication_sum_level(tr.getRoot());
+    cout<<endl<<"INORDER"<<" "<<tr.pair_particular_sum(tr.getRoot(),23);
     /*cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
     tr.make_Threaded_Recursion(tr.getRoot());
     tr.print_Threaded(tr.getRoot());*/

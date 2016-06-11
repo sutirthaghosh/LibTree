@@ -32,6 +32,7 @@ root2leaf_particular_sum.cpp
 diff_sum_alternate_level.cpp
 Create_Tree_from_Inorder_Preorder.cpp
 multiplication_sum_level.cpp
+pair_particular_sum.cpp
 )
 
 add_library(LibTree SHARED

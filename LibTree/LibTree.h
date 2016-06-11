@@ -56,4 +56,5 @@ public:
     int diff_sum_alternate_level(TreeNode*);
     TreeNode* Create_Tree_from_Inorder_Preorder(int inorder[],int preorder[],int,int);
     int multiplication_sum_level(TreeNode*);
+    bool pair_particular_sum(TreeNode*,int);
 };

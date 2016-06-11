@@ -7,7 +7,7 @@ int Tree::multiplication_sum_level(TreeNode* root){
     q.push(NULL);
     while(!q.empty()){
         if(q.front()==NULL){
-            std::cout<<sum<<std::endl;
+           // std::cout<<sum<<std::endl;
             q.pop();
             if(sum)
             mult*=sum;
