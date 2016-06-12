@@ -1,5 +1,42 @@
 #include <LibTree.h>
 using namespace std;
+ 
+Tree::Tree(int a){
+    root=NULL;
+    /*
+     *          10
+     *         /  \
+     *        7    15
+     *       / \   / \
+     *      3   8 14  18
+     *     / \    /   / \
+     *    2  6   13  16  20
+     *           /  
+     *          12  
+     * */
+    int preorder[] = {10,7,3,2,6,8,15,14,13,12,18,16,20};
+    int inorder[]= {2,3,6,7,8,10,12,13,14,15,16,18,20};
+    int i=0;
+    setRoot(Create_Tree_from_Inorder_Preorder(inorder,preorder,0,12,i));
+    /*insert(10);
+    insert(7);
+    insert(8);
+    insert(3);
+    insert(2);
+    insert(6);
+    insert(15);
+    insert(14);
+    insert(13);
+    insert(12);
+    insert(18);
+    insert(16);
+    insert(20);*/
+        
+        std::cout<<"Creating Tree"<<a;
+    }
+    
+map<std::string,Tree*> TreeAlgoRegistrar :: registrar;
+
 TreeNode* Tree::insert(int id,TreeNode *parent,int position){
     TreeNode *temp=new TreeNode(id);
     if(parent!=NULL){
@@ -48,3 +85,9 @@ void Tree::print(){
     }
 }
 
+void Tree::looper(){
+    for(auto &&i : TreeAlgoRegistrar::registrar){
+        std::cout<<std::endl<<i.first<<std::endl;
+        i.second->Algo();
+    }
+}

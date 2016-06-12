@@ -2,6 +2,7 @@
 #include <LibTree.h>
 #include <ncurses.h>
 using namespace std;
+
 void aux();
 int main() {
     
@@ -15,7 +16,7 @@ int main() {
     return 0;
 }
 void aux(){
-   Tree tr;
+    Tree tr(1);
     TreeNode *t1,*t2,*t3,*t4,*t5;
     /*
      *          10
@@ -28,23 +29,6 @@ void aux(){
      *           /  
      *          12  
      * */
-    int preorder[] = {10,7,3,2,6,8,15,14,13,12,18,16,20};
-    int inorder[]= {2,3,6,7,8,10,12,13,14,15,16,18,20};
-   tr.setRoot(tr.Create_Tree_from_Inorder_Preorder(inorder,preorder,0,12));
-    /*t1=tr.insert(10,NULL,0);
-    t2=tr.insert(7,t1,0);
-    tr.insert(8);
-    tr.insert(3);
-    tr.insert(2);
-    tr.insert(6);
-    tr.insert(15);
-    tr.insert(14);
-    tr.insert(13);
-    tr.insert(12);
-    tr.insert(18);
-    tr.insert(16);
-    tr.insert(20);*/
-
     cout<<"LEVEL ORDER"<<endl;
     tr.print();
     cout<<"SPIRAL ORDER"<<endl;
@@ -76,11 +60,11 @@ void aux(){
     tr.boundary_traversal(tr.getRoot());
     cout<<endl<<"K DISTANCE FROM LEAF"<<endl;
     tr.k_distance_from_leaf(tr.getRoot(),12,5);
-    cout<<endl<<"IS MIRROR"<<endl;
+/*    cout<<endl<<"IS MIRROR"<<endl;
     if(tr.is_mirror(tr.getRoot()->left,tr.getRoot()->right))
         cout<<"yes";
     else
-        cout<<"no";
+        cout<<"no";*/
     cout<<endl<<"DIAMETER OF THE TREE";
     cout<<tr.Diameter(tr.getRoot());
     cout<<endl<<"POST ORDER";
@@ -101,4 +85,5 @@ void aux(){
     tr.tree2dll(tr.getRoot());
     tr.sum_tree(tr.getRoot());
     tr.print();*/ 
+    tr.looper();
 }

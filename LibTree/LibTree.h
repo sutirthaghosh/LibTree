@@ -17,14 +17,21 @@ public:
     bool rightThreaded;
     TreeNode(int temp=0){id=temp;left=NULL;right=NULL;rightThreaded=false;}
 };
+
 class Tree{
+public:
     TreeNode *root;
+    
     //postion 0 means left position 1 means right
 public:
-    Tree(){root=NULL;}
+    Tree(int a =0);
+    //override this functions 
+    virtual void Algo(){};
+    void looper();
+    
     TreeNode* insert(int id,TreeNode *parent=NULL,int position=-1);
     TreeNode* getRoot(){return root;}
-    void setRoot(TreeNode *R){root=R;}
+    inline void setRoot(TreeNode *R){root=R;}
     void print();
     void printS();
     int kdistance(TreeNode* root,int id,int k);
@@ -54,7 +61,34 @@ public:
     TreeNode* deepest_Leaf(TreeNode *,int);
     int root2leaf_particular_sum(TreeNode *root,int);
     int diff_sum_alternate_level(TreeNode*);
-    TreeNode* Create_Tree_from_Inorder_Preorder(int inorder[],int preorder[],int,int);
+    TreeNode* Create_Tree_from_Inorder_Preorder(int inorder[],int preorder[],int,int,int&);
     int multiplication_sum_level(TreeNode*);
     bool pair_particular_sum(TreeNode*,int);
+};
+
+class TreeAlgoRegistrar{
+    friend class Tree;
+    friend class RegisterALgo;
+    static std::map<std::string,Tree*> registrar;
+public:
+    inline static void register_Algo(std::string str,Tree *Algoclass){
+        registrar[str]=Algoclass;
+    }
+    inline static void unregister_Algo(std::string str){
+        registrar.erase(str);
+    }
+};
+
+class RegisterAlgo{
+public:
+   inline RegisterAlgo(std::string str,Tree *Algoclass )
+    :name(str)
+    {
+        TreeAlgoRegistrar::register_Algo(str,Algoclass);
+    }
+   inline ~RegisterAlgo(){
+        TreeAlgoRegistrar::unregister_Algo(name);
+    }
+private:
+    std::string name;
 };
