@@ -68,9 +68,9 @@ public:
 
 class TreeAlgoRegistrar{
     friend class Tree;
-    friend class RegisterALgo;
+    friend class RegisterAlgo;
     static std::map<std::string,Tree*> registrar;
-public:
+private:
     inline static void register_Algo(std::string str,Tree *Algoclass){
         registrar[str]=Algoclass;
     }
@@ -88,6 +88,7 @@ public:
     }
    inline ~RegisterAlgo(){
         TreeAlgoRegistrar::unregister_Algo(name);
+        std::cout<<"called desctructor"<<std::endl;
     }
 private:
     std::string name;

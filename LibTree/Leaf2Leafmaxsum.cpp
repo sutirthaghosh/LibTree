@@ -5,6 +5,7 @@ int leaftoleafmaxsum(TreeNode *root,int &maxsum){
         return 0;
     }
     if(root->left==NULL && root->right==NULL){
+        std::cout<<root->id;
         return root->id;
     }
     int x= leaftoleafmaxsum(root->left,maxsum);

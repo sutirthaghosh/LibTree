@@ -60,11 +60,6 @@ void aux(){
     tr.boundary_traversal(tr.getRoot());
     cout<<endl<<"K DISTANCE FROM LEAF"<<endl;
     tr.k_distance_from_leaf(tr.getRoot(),12,5);
-/*    cout<<endl<<"IS MIRROR"<<endl;
-    if(tr.is_mirror(tr.getRoot()->left,tr.getRoot()->right))
-        cout<<"yes";
-    else
-        cout<<"no";*/
     cout<<endl<<"DIAMETER OF THE TREE";
     cout<<tr.Diameter(tr.getRoot());
     cout<<endl<<"POST ORDER";
@@ -81,9 +76,9 @@ void aux(){
     /*cout<<endl<<"*******WARNING THREADED TREE CREATING*******"<<endl;
     tr.make_Threaded_Recursion(tr.getRoot());
     tr.print_Threaded(tr.getRoot());*/
-    /*cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
-    tr.tree2dll(tr.getRoot());
-    tr.sum_tree(tr.getRoot());
-    tr.print();*/ 
+    //cout<<"WARNING TREE STRUCTURE CHANGING--->TREE 2 DOUBLY LINK LIST"<<endl;
+    //tr.tree2dll(tr.getRoot());
+    //tr.sum_tree(tr.getRoot());
+    //tr.print(); 
     tr.looper();
 }

@@ -33,6 +33,7 @@ diff_sum_alternate_level.cpp
 Create_Tree_from_Inorder_Preorder.cpp
 multiplication_sum_level.cpp
 pair_particular_sum.cpp
+sum_in_max_diameter_path.cpp
 )
 
 add_library(LibTree SHARED

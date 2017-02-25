@@ -14,7 +14,7 @@
     
     
      void check_mirror::Algo(){
-         std::cout<<std::endl<<"CHECK MIRROR";
+         std::cout<<std::endl<<"CHECK MIRROR    ";
          if(root!=NULL)
              std::cout<<is_mirror(root->left,root->right);
          if(root==NULL)

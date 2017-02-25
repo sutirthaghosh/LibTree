@@ -87,7 +87,9 @@ void Tree::print(){
 
 void Tree::looper(){
     for(auto &&i : TreeAlgoRegistrar::registrar){
-        std::cout<<std::endl<<i.first<<std::endl;
+        std::cout<<std::endl<<"-----------------------------"<<std::endl;
+        std::cout<<std::endl<<i.first<<" "<<std::endl;
         i.second->Algo();
+        std::cout<<std::endl<<"-----------------------------"<<std::endl;
     }
 }
